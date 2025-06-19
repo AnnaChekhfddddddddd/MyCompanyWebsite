@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Company Website</title>
+</head>
+<body>
+    <h1>Welcome to Our Company</h1>
+    <h2>Our Services</h2>
+    <ul>
+        {% for service in services %}
+            <li>{{ service.title }} - {{ service.description }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Contact Us</h2>
+    <p>Email: info@mycompany.com | Phone: +1-123-456-7890</p>
+</body>
+</html>
